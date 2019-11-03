@@ -87,7 +87,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                     <button type="button" class="btn btn-secondary btn-block <?php the_lang_class('js-call-back'); ?>">
-                        <?php _e('Book time', 'brainworks'); ?>
+                        <i class="fal fa-clock"></i> <?php _e('Book time', 'brainworks'); ?>
                     </button>
                 </div>
             </div>

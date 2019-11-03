@@ -8746,7 +8746,7 @@ html.pum-open.pum-open-overlay.pum-open-scrollable .pum-overlay.pum-active {
       -ms-user-select: none;
           user-select: none;
   border: 1px solid transparent;
-  padding: 10px 40px;
+  padding: 8px 40px;
   font-size: 16px;
   line-height: 1.5;
   border-radius: 25px;
