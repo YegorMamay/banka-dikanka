@@ -88,15 +88,15 @@
     }
 
     &-item {
-        margin: 0 5px;
+        //margin: 0 5px;
 
         a {
             display: block;
 
 
             &:after {
-                content: "/";
-                margin-left: 15px;
+                content: "|";
+                margin-left: 5px;
             }
 
             img {

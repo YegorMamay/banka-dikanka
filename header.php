@@ -18,22 +18,58 @@
 <div class="wrapper js-container"><!--Do not delete!-->
 
     <header class="page-header fixed-to-top">
-        <div class="container">
+        <div class="container pre-header">
+                <div class="row align-items-center">
+                    <div class="pre-header_wrap">
+                    
+            <?php
+            $address = get_theme_mod('bw_additional_address');
+            if (!empty($address)) { ?>
+                <span>
+                    <i class="fal fa-map-marker-alt"></i>
+                    <?php echo esc_html($address); ?>
+                </span>
+            <?php } ?>
+            
+            <div class="pre-header_phones">
+                <i class="fal fa-mobile"></i>
+                <?php echo do_shortcode('[bw-phone]'); ?>  
+            </div>
+            
+            <div class="pre-header_schedule">
+                <i class="fal fa-clock"></i>
+                <?php
+                    $work_schedule = get_theme_mod('bw_additional_work_schedule');
+                    if (!empty($work_schedule )) { ?>
+                    <?php echo $work_schedule ; ?>
+                <?php } ?>
+            </div>
+            
+            <?php if (function_exists('pll_the_languages')) { ?>
+                <ul class="lang">
+                    <?php pll_the_languages(array(
+                    'show_flags' => 0,
+                    'show_names' => 1,
+                    'hide_if_empty' => 0,
+                    'display_names_as' => 'name'
+                    )); ?>
+                </ul>
+            <?php } ?>
+
+            <?php echo do_shortcode('[bw-social]'); ?>
+                        
+                    </div>
+               </div>
+       </div>
+        <div class="container header-section">
             <div class="row align-items-center">
-                <div class="col-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">
-                    <div class="logo">
-	                    <?php get_default_logo_link([
-                            'name'    => 'logo.svg',
-                            'options' => [
-                                'class'  => 'logo-img',
-                                'width'  => 100,
-                                'height' => 50,
-                                ],
-                            ])
-                        ?>
+                <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
+                    <div class="name">
+	                    <div class="h6 text-uppercase"><?php echo esc_html( get_bloginfo( 'name' ) ); ?></div>
+                        <div class="text-muted"><?php bloginfo( 'description' ); ?></div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7">
+                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
                     <?php if (has_nav_menu('main-nav')) { ?>
                         <nav class="nav js-menu">
                             <button type="button" tabindex="0" class="menu-item-close menu-close js-menu-close"></button>
@@ -51,7 +87,7 @@
                 </div>
                 <div class="col-12 col-sm-12 col-md-3 col-lg-3 col-xl-3">
                     <button type="button" class="btn btn-secondary btn-block <?php the_lang_class('js-call-back'); ?>">
-                        <?php _e('Call back', 'brainworks'); ?>
+                        <?php _e('Book time', 'brainworks'); ?>
                     </button>
                 </div>
             </div>

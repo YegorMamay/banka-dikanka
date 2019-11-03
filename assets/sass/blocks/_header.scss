@@ -1,9 +1,11 @@
 .page-header {
-    padding: 10px 0;
     background-color: $headerBgColor;
     color: $headerFontColor;
     box-shadow: $shadow;
-
+    
+    .header-section {
+        padding: 10px 0;
+    }
 }
 
 .fixed-to-top {
@@ -27,5 +29,18 @@
     //md 769 - 1024
     @media #{$laptop} {
         display: none;
+    }
+}
+
+.pre-header_wrap {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid $themeColorThree;
+    
+    .pre-header_phones {
+        display: flex;
+        align-items: baseline;
     }
 }

@@ -28,7 +28,7 @@ $yiq-text-light: #fff !default;
 
 $btn-enable-rounded: true !default;
 $btn-enable-shadows: false !default;
-$btn-enable-gradients: false !default;
+$btn-enable-gradients: true !default;
 
 $btn-padding-y: 10px !default;
 $btn-padding-x: 40px !default;
@@ -134,12 +134,13 @@ fieldset:disabled a.btn {
         $active-background: darken($background, 10%);
         $active-border: darken($border, 12.5%);
         color: color-yiq($background);
+        border-bottom: 3px solid darken($themeColorTwo, 20%);
         @if $btn-enable-gradients {
             background: $background linear-gradient(180deg, mix(#fff, $background, 15%), $background) repeat-x;
         } @else {
             background-color: $background;
         }
-        border-color: $border;
+        //border-color: $border;
 
         @if($btn-enable-shadows) {
             box-shadow: $btn-box-shadow;
@@ -152,7 +153,8 @@ fieldset:disabled a.btn {
             } @else {
                 background-color: $hover-background;
             }
-            border-color: $hover-border;
+            //border-color: $hover-border;
+            border-bottom: 3px solid darken($themeColorTwo, 20%);
         }
 
         &:focus,
