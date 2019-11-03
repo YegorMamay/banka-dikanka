@@ -12,7 +12,7 @@ $themeColorOne: #303030; // Обычно самый темный цвет. Ис�
 $themeColorTwo: #EFB83A; // Основной "брендовый" цвет.
 // Поменять значение этой переменной согласно макета обязательно!
 
-$themeColorThree: #E5E5E5;
+$themeColorThree: #F4F4F4;
 
 
 // SELECTION: цвет фона и текста при выделении его курсором
@@ -89,8 +89,8 @@ $tableEvenFontColor: #fff;
 $textMutedColor: #aaa;
 
 // Icons
-$iconColor: $themeColorTwo;
-$iconColorActive: $bodyBgColor;
+$iconColor: $themeColorOne;
+$iconColorActive: $themeColorTwo;
 $iconColorReversed: $bodyBgColor;
 
 // FORMS

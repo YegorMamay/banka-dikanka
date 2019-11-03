@@ -11037,7 +11037,6 @@ h1 a:hover, h2 a:hover, h3 a:hover, h4 a:hover, h5 a:hover, h6 a:hover, h1.hero-
   color: #303030;
   font-family: "Montserrat", sans-serif;
   line-height: 1.2;
-  font-weight: 700;
 }
 
 h1.hero-title {
@@ -11835,10 +11834,10 @@ hr.style-two {
   display: block;
   text-align: center;
   text-decoration: none;
-  color: #EFB83A;
+  color: #303030;
 }
 .social-link:hover {
-  color: #f3c969;
+  color: #EFB83A;
 }
 
 .messenger, .messenger-item {
@@ -11915,7 +11914,7 @@ hr.style-two {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 10px 0;
-  border-bottom: 1px solid #E5E5E5;
+  border-bottom: 1px solid #F4F4F4;
 }
 .pre-header_wrap .pre-header_phones {
   display: -webkit-box;
@@ -12708,7 +12707,7 @@ body {
   position: relative;
   color: #303030;
   font: 400 16px/1.5 "Montserrat", sans-serif;
-  background-color: #E5E5E5;
+  background-color: #F4F4F4;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
