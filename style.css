@@ -12600,11 +12600,190 @@ hr.style-two {
 
 .copyright a {
   color: #000;
-  text-decoration: underline;
 }
 
 .copyright a:hover {
   color: black;
+}
+
+.developer {
+  font-size: 14px;
+}
+
+.footer-top {
+  border-bottom: 1px solid #C4C4C4;
+}
+
+.footer-top__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+}
+
+.footer-top__item {
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.footer-top__item:last-child {
+  border-right: 0;
+}
+
+.footer-top__sub-title {
+  text-align: center;
+}
+
+@media screen and (min-width: 1140px) {
+  .footer-top__wrapper {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .footer-top__item {
+    border-right: 1px solid #C4C4C4;
+  }
+  .footer-top__item:nth-child(1) {
+    width: 26%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+  }
+  .footer-top__item:nth-child(2) {
+    width: 40%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .footer-top__item:nth-child(3) {
+    width: 15%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .footer-top__item:nth-child(4) {
+    width: 12%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .footer-top__item .pre-header_phones i {
+    display: none;
+  }
+  .footer-top__item .pre-header_phones .phone {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .footer-top__item .pre-header_phones .phone .phone-item {
+    margin-bottom: 6px;
+  }
+  .footer-top__item .pre-header_phones .phone .phone-item:last-child {
+    margin-bottom: 0;
+  }
+  .footer-top__item .pre-header_phones .phone .phone-number {
+    font-size: 15px;
+  }
+}
+
+.footer-bottom {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  padding: 5% 0;
+}
+
+.footer-bottom .btn-secondary {
+  width: auto;
+  min-width: 200px;
+}
+
+@media screen and (min-width: 575px) {
+  .footer-bottom {
+    padding: 2% 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer-bottom {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+  }
 }
 
 ::-moz-selection {

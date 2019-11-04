@@ -1,28 +1,149 @@
 .footer {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    background-color: $footerBgColor;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $footerBgColor;
 }
 
 .pre-footer {
-    padding: 20px 0;
-    background-color: lighten($footerBgColor, 10%);
+  padding: 20px 0;
+  background-color: lighten($footerBgColor, 10%);
 }
 
 .copyright {
-    padding: 14px 0;
+  padding: 14px 0;
+  color: $footerFontColor;
+  display: flex;
+  justify-content: space-between;
+
+  a {
     color: $footerFontColor;
+
+    &:hover {
+      color: $footerLinkColorActive;
+    }
+  }
+}
+
+.developer {
+  font-size: 14px;
+}
+
+.footer-top {
+  border-bottom: 1px solid $light_border_color;
+  &__wrapper {
     display: flex;
-    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+  }
 
-    a {
-        color: $footerFontColor;
-        text-decoration: underline;
+  &__item {
+    padding: 10px 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
 
-        &:hover {
-            color: $footerLinkColorActive;
+    &:last-child {
+      border-right: 0;
+    }
+  }
+
+  &__sub-title {
+    text-align: center;
+  }
+}
+
+@media screen and (min-width: 1140px) {
+    .footer-top {
+        &__wrapper {
+            flex-direction: row;
+            justify-content: space-between;
         }
     }
+}
+
+@media screen and (min-width: 1200px) {
+    .footer-top {
+        &__item {
+            border-right: 1px solid $light_border_color;
+            &:nth-child(1) {
+                width: 26%;
+                display: flex;
+                align-items: center;
+                justify-content: flex-start;
+            }
+            &:nth-child(2) {
+                width: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &:nth-child(3) {
+                width: 15%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+            &:nth-child(4) {
+                width: 12%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 380px) {
+    .footer-top {
+        &__item {
+            & .pre-header_phones {
+                & i {
+                    display: none;
+                }
+                & .phone {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+                    justify-content: center;
+                    & .phone-item {
+                        margin-bottom: 6px;
+                        &:last-child {
+                            margin-bottom: 0;
+                        }
+                    }
+                    & .phone-number {
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5% 0;
+    & .btn-secondary {
+        width: auto;
+        min-width: 200px;
+    }
+}
+
+@media screen and (min-width: 575px) {
+  .footer-bottom {
+    padding: 2% 0;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .footer-bottom {
+    flex-direction: row;
+    justify-content: space-between;
+  }
 }
