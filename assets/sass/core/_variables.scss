@@ -4,6 +4,7 @@ $font-url-path: "assets/fonts/" !default;
 
 $borderRadius: 25px;
 $shadow: 0 0 10px rgba(#000, .2);
+$small_border_radius: 3px;
 
 // BRAND
 $themeColorOne: #303030; // Обычно самый темный цвет. Используется для:
@@ -30,6 +31,7 @@ $headerFontColor: $themeColorOne;
 // Text Highlight: цвет фона и текста при добавлении к нему .highlighted
 $textHighlightBgColor: $themeColorTwo;
 $textHighlightColor: #fff;
+$decor_color_elements: linear-gradient(180deg, #FFD36D 0%, #E4A616 100%, #E3A311 100%);
 
 // MENU
 $menuBgColor: #fff;
@@ -74,6 +76,7 @@ $titleFontColorActive: lighten($titleFontColor, 10%);
 // LINKS
 $linkFontColor: #000;
 $linkFontColorActive: lighten($linkFontColor, 20%);
+$light_text: #CBCBCB;
 
 // TABLE
 $tableBgColor: $themeColorTwo;

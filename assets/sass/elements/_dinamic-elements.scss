@@ -1,115 +1,125 @@
 .logo {
-    &,
-    &-link,
-    &-img {
-        display: inline-block;
-        vertical-align: middle;
-    }
+  &,
+  &-link,
+  &-img {
+    display: inline-block;
+    vertical-align: middle;
+  }
 }
 
 .phone {
-    @extend %reset-list;
+  @extend %reset-list;
 
-    &,
-    &-item {
-        display: inline-block;
-        vertical-align: middle;
+  &,
+  &-item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &-item {
+    margin: 0 5px;
+  }
+
+  &-number {
+    display: inline-block;
+    text-decoration: none;
+
+    &:hover {
+      text-decoration: underline;
     }
-
-    &-item {
-        margin: 0 5px;
-    }
-
-    &-number {
-        display: inline-block;
-        text-decoration: none;
-
-        &:hover {
-            text-decoration: underline;
-        }
-    }
+  }
 }
 
 .social {
-    @extend %reset-list;
+  @extend %reset-list;
 
-    &,
-    &-item {
-        display: inline-block;
-        vertical-align: middle;
+  &,
+  &-item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &-item {
+    margin: 0 5px;
+  }
+
+  &-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color: $iconColor;
+
+    &:hover {
+      color: $iconColorActive;
     }
-
-    &-item {
-        margin: 0 5px;
-    }
-
-    &-link {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-        color: $iconColor;
-
-        &:hover {
-            color: $iconColorActive; 
-        }
-    }
+  }
 }
 
 .messenger {
-    @extend %reset-list;
+  @extend %reset-list;
 
-    &,
-    &-item {
-        display: inline-block;
-        vertical-align: middle;
+  &,
+  &-item {
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  &-item {
+    margin: 0 5px;
+  }
+
+  &-link {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+
+    &:hover {
     }
-
-    &-item {
-        margin: 0 5px;
-    }
-
-    &-link {
-        display: block;
-        text-align: center;
-        text-decoration: none;
-
-        &:hover {
-        }
-    }
+  }
 }
 
 .lang {
-    @extend %reset-list;
+  @extend %reset-list;
 
-    &,
-    &-item {
-        display: inline-block;
-        vertical-align: middle;
+  &,
+  &-item {
+    display: inline-block;
+    vertical-align: middle;
+
+    &.current-lang {
+      & a {
+        color: $linkFontColor;
+      }
     }
+  }
 
-    &-item {
-        //margin: 0 5px;
+  &-item {
+    //margin: 0 5px;
 
-        a {
-            display: block;
+    a {
+      display: block;
+      color: $light_text;
 
+      &:hover {
+        color: $linkFontColor;
+      }
 
-            &:after {
-                content: "|";
-                margin-left: 5px;
-            }
+      &:after {
+        content: "|";
+        margin-left: 5px;
+      }
 
-            img {
-                height: 15px;
-            }
-        }
+      img {
+        height: 15px;
+      }
     }
+  }
 
-    &-item:last-child {
-        a {
-            &:after {
-                display: none;
-            }
-        }
+  &-item:last-child {
+    a {
+      &:after {
+        display: none;
+      }
     }
+  }
 }
