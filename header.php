@@ -101,7 +101,10 @@
             <span class="hamburger-inner"></span>
         </span>
         </button>
-        <div class="logo"><?php get_default_logo_link(); ?></div>
+        <div class="text-uppercase text-white">
+            <?php echo esc_html( get_bloginfo( 'name' ) ); ?>
+            <div class="text-muted text-muted--sm-size"><?php bloginfo( 'description' ); ?></div>
+        </div>
     </div>
     <?php if (has_nav_menu('main-nav')) { ?>
         <nav class="nav js-menu hide-on-desktop">
@@ -115,6 +118,9 @@
             'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>',
             'depth' => 3
         )); ?>
+            <div class="mobile-phones">
+                <?php echo do_shortcode('[bw-phone]'); ?>
+            </div>
         </nav>
     <?php } ?>
     <!-- Mobile menu end-->

@@ -20,6 +20,9 @@ em {
 .text {
     &-muted {
         color: $textMutedColor !important;
+        &--sm-size {
+            font-size: 13px;
+        }
     }
     
     &-white {
