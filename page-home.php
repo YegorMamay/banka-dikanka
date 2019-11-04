@@ -8,9 +8,9 @@
 <div class="container">
 
 <?php get_template_part('loops/content', 'home'); ?>
+<div class="custom-wrapper">
+    <p class="custom-wrapper__title h5">Отзывы клиентов</p>
+</div>
 <?php echo do_shortcode('[bw-reviews] '); ?>
-    <div class="custom-wrapper">
-        <p class="custom-wrapper__title h5">Отзывы клиентов</p>
-    </div>
 </div><!-- /.container -->
 <?php get_footer(); ?>
