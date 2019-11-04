@@ -12848,6 +12848,221 @@ hr.style-two {
   }
 }
 
+.benefits__wrapper {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  padding: 4% 0;
+}
+
+.benefits__item {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(237, 207, 139, 0)), to(#EDCF8B));
+  background: linear-gradient(180deg, rgba(237, 207, 139, 0) 0%, #EDCF8B 100%);
+  width: 100%;
+  max-width: 270px;
+  min-height: 160px;
+  margin: 0 auto 30px;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  border-radius: 3px;
+  position: relative;
+}
+
+.benefits__item:before {
+  content: '';
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(237, 207, 139, 0)), to(#EDCF8B));
+  background: linear-gradient(180deg, rgba(237, 207, 139, 0) 0%, #EDCF8B 100%);
+  border-radius: 3px;
+  width: calc(100% - 20px);
+  height: 16px;
+  position: absolute;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+  left: 50%;
+  bottom: -7px;
+  z-index: 5;
+}
+
+.benefits__item-simple {
+  background: #fff;
+  width: 100%;
+  max-width: 270px;
+  min-height: 80px;
+  margin: 0 auto 30px;
+  padding: 10px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.benefits__round {
+  background: -webkit-gradient(linear, left top, left bottom, from(rgba(227, 163, 17, 0.7)), to(rgba(255, 211, 109, 0.7)));
+  background: linear-gradient(180deg, rgba(227, 163, 17, 0.7) 0%, rgba(255, 211, 109, 0.7) 100%);
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  position: relative;
+  padding-top: 20px;
+}
+
+.benefits__sub-title {
+  font-size: 12px;
+  text-align: center;
+}
+
+.benefits__value {
+  font-size: 45px;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.2;
+  margin-top: -40px;
+  position: relative;
+  z-index: 5;
+}
+
+.benefits__description {
+  font-weight: 500;
+  font-size: 16px;
+  text-align: center;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.benefits__count {
+  color: #EFB83A;
+  font-weight: 500;
+  font-size: 50px;
+  position: absolute;
+  left: -5px;
+  bottom: 16px;
+  line-height: 0;
+  opacity: 0.4;
+}
+
+.module-block__container {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 4% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+.module-block__item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  width: 100%;
+  max-width: 215px;
+  min-height: 240px;
+  margin: 0 auto 20px;
+}
+
+.module-block__image-wrapper {
+  background: rgba(255, 255, 255, 0.5);
+  width: 170px;
+  height: 170px;
+  border-radius: 50%;
+  padding: 10px;
+  position: relative;
+}
+
+.module-block__image-bg {
+  background-size: cover;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+}
+
+.module-block__bg-1 {
+  background: url("/wp-content/themes/banka-dikanka/assets/img/bg_index_1.jpg") no-repeat;
+}
+
+.module-block__bg-2 {
+  background: url("/wp-content/themes/banka-dikanka/assets/img/bg_index_2.jpg") no-repeat;
+}
+
+.module-block__bg-3 {
+  background: url("/wp-content/themes/banka-dikanka/assets/img/bg_index_3.jpg") no-repeat;
+}
+
+.module-block__count {
+  background: #fff;
+  color: #EFB83A;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.module-block__description {
+  font-size: 16px;
+  line-height: 1.2;
+  width: 100%;
+  text-align: center;
+  margin-top: 15px;
+}
+
 ::-moz-selection {
   text-shadow: none;
   color: #fff;
@@ -12980,6 +13195,13 @@ img {
   display: inline-block;
   line-height: normal;
   margin: 15px 0;
+}
+
+.custom-wrapper__description {
+  width: 100%;
+  text-align: center;
+  max-width: 880px;
+  margin: 15px auto;
 }
 
 @media screen and (min-width: 1024px) {

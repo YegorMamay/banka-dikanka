@@ -1,0 +1,74 @@
+.module-block {
+  &__container {
+    width: 100%;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 4% 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    max-width: 215px;
+    min-height: 240px;
+    margin: 0 auto 20px;
+  }
+
+  &__image-wrapper {
+    background: rgba(255, 255, 255, 0.5);
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    padding: 10px;
+    position: relative;
+  }
+
+  &__image-bg {
+    background-size: cover;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  }
+
+  &__bg-1 {
+    background: url("/wp-content/themes/banka-dikanka/assets/img/bg_index_1.jpg") no-repeat;
+  }
+
+  &__bg-2 {
+    background: url("/wp-content/themes/banka-dikanka/assets/img/bg_index_2.jpg") no-repeat;
+  }
+
+  &__bg-3 {
+    background: url("/wp-content/themes/banka-dikanka/assets/img/bg_index_3.jpg") no-repeat;
+  }
+
+  &__count {
+    background: $textHighlightColor;
+    color: $themeColorTwo;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    position: absolute;
+    left: 5px;
+    top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+  }
+
+  &__description {
+    font-size: 16px;
+    line-height: 1.2;
+    width: 100%;
+    text-align: center;
+    margin-top: 15px;
+  }
+}
