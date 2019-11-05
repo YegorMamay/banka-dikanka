@@ -1,0 +1,75 @@
+.custom-block {
+  background-color: $textHighlightColor;
+  padding: 25px 30px;
+  border: 10px solid $themeColorTwo;
+  margin: 15px auto;
+  width: 100%;
+  max-width: 1170px;
+
+  &__description {
+    font-size: 22px;
+    line-height: 32px;
+    width: 100%;
+    max-width: 700px;
+    position: relative;
+    z-index: 10;
+    margin-bottom: 15px;
+  }
+
+  &__form {
+    width: 100%;
+    max-width: 580px;
+    position: relative;
+    z-index: 10;
+  }
+
+  &__container {
+    background: url("/wp-content/themes/banka-dikanka/assets/img/form_bg_image.png") no-repeat;
+    background-size: cover;
+    width: 100%;
+    max-width: 540px;
+    min-height: 350px;
+    position: absolute;
+    right: -30px;
+    bottom: -25px;
+    z-index: 5;
+  }
+
+  &__section {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    min-height: 135px;
+  }
+}
+
+@media screen and (max-width: 1150px) {
+  .custom-block {
+    &__container {
+      display: none;
+    }
+
+    &__description {
+      max-width: none;
+      width: 100%;
+      text-align: center;
+    }
+
+    &__form {
+      max-width: none;
+    }
+  }
+}
+
+@media screen and (max-width: 575px) {
+  .custom-block {
+    padding: 25px 0;
+
+    &__description {
+      font-size: 16px;
+      line-height: normal;
+    }
+  }
+}
