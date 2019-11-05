@@ -13122,10 +13122,10 @@ hr.style-two {
 
 .custom-block__container {
   background: url("/wp-content/themes/banka-dikanka/assets/img/form_bg_image.png") no-repeat;
-  background-size: cover;
+  background-size: contain;
   width: 100%;
-  max-width: 540px;
-  min-height: 350px;
+  max-width: 520px;
+  min-height: 320px;
   position: absolute;
   right: -30px;
   bottom: -25px;
@@ -13144,7 +13144,7 @@ hr.style-two {
   -ms-flex-pack: justify;
   justify-content: space-between;
   position: relative;
-  min-height: 135px;
+  min-height: 120px;
 }
 
 @media screen and (max-width: 1150px) {
