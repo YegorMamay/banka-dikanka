@@ -20,7 +20,7 @@
                 background: $menuBgColorActive;
 
                 a {
-                    color: $menuFontColorActive;
+                    color: $textHighlightColor;
                 }
             }
 
@@ -85,11 +85,6 @@
                     border: 5px solid $menuFontColor;
                     border-color: $menuFontColor transparent transparent transparent;
                 }
-            }
-
-            &-current {
-                border-bottom: 2px solid $menuBgColorActive;
-                padding-bottom: 0;
             }
 
             .no-touch &:hover,

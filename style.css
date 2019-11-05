@@ -11894,7 +11894,7 @@ hr.style-two {
 }
 
 .nav .menu-item:hover a {
-  color: #303030;
+  color: #fff;
 }
 
 .nav .menu-item .menu-item-has-children-arrow {
@@ -11955,11 +11955,6 @@ hr.style-two {
   right: 8px;
   border: 5px solid #303030;
   border-color: #303030 transparent transparent transparent;
-}
-
-.nav .menu-item-current {
-  border-bottom: 2px solid #EFB83A;
-  padding-bottom: 0;
 }
 
 .no-touch .nav .menu-item:hover .menu-link, .nav .menu-item-current .menu-link, .nav .menu-item.current-menu-parent .menu-link, .nav .menu-item.current-menu-ancestor .menu-link {
@@ -12904,7 +12899,7 @@ hr.style-two {
 .benefits__item-simple {
   background: #fff;
   width: 100%;
-  max-width: 270px;
+  max-width: 290px;
   min-height: 80px;
   margin: 0 auto 30px;
   padding: 10px 15px;
@@ -13109,6 +13104,12 @@ body {
   overflow-x: hidden;
   min-height: 100%;
   padding-top: 115px;
+}
+
+@media screen and (max-width: 1024px) {
+  .wrapper {
+    padding-top: 64px;
+  }
 }
 
 b,

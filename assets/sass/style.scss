@@ -110,6 +110,12 @@ body {
     padding-top: 115px;
 }
 
+@media screen and (max-width: 1024px) {
+    .wrapper {
+        padding-top: 64px;
+    }
+}
+
 b,
 strong {
     font-weight: bold;
