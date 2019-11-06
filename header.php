@@ -6,6 +6,22 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=no">
     <meta name="apple-mobile-web-app-capable" content="yes">
     <meta name="apple-mobile-web-app-title" content="<?php bloginfo('name'); ?> - <?php bloginfo('description'); ?>">
+    
+    <meta property="og:locale" content="ru_RU" />
+    <meta property="og:locale:alternate" content="ru_RU" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Банька Диканька" />
+    <meta property="og:description" content="Сауна со всеми удобствами на Академика Карпинского 7 | Киев">
+    <meta property="og:url" content="https://banka-dikanka.kiev.ua/" />
+    <meta property="og:site_name" content="Банька Диканька" />
+    <meta property="og:image" content="/wp-content/uploads/banka-cover.jpg" />
+    <meta property="og:image:secure_url" content="/wp-content/uploads/banka-cover.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="628" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Банька Диканька | сауна со всеми удобствами на Академика Карпинского 7" />
+    <meta name="twitter:image" content="/wp-content/uploads/banka-cover.jpg" />
+
     <link rel="shortcut icon" href="<?php echo esc_url(get_template_directory_uri() . '/assets/img/favicon.ico'); ?>"
           type="image/x-icon">
     <link rel="icon" href="<?php echo esc_url(get_template_directory_uri() . '/assets/img/favicon.ico'); ?>"
