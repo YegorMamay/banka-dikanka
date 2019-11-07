@@ -46,6 +46,7 @@ $review-next: '\00bb'; // &raquo;
         justify-content: space-between;
         max-width: 800px;
         margin: 0 auto;
+        box-shadow: $benefits_shadow;
     }
 
     &-client {
